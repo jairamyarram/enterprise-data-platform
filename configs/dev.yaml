@@ -1,0 +1,14 @@
+env: dev
+
+s3:
+  raw_bucket: s3://client-dev-raw
+  curated_bucket: s3://client-dev-curated
+
+spark:
+  app_name: enterprise_data_platform
+  shuffle_partitions: 200
+
+warehouse:
+  type: snowflake
+  database: DEV_DB
+  schema: ANALYTICS
